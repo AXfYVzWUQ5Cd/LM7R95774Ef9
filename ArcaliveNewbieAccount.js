@@ -2,7 +2,7 @@
 // @name         아카라이브 깡계확인
 // @namespace    http://kemomimi.com/
 // @version      1.0
-// @description  깡계확인 스크립트 - 확인기준 글 14개 이하 또는 댓글 14개 이하로 수정
+// @description  깡계확인 스크립트 - 일부 어레인지
 // @match        https://arca.live/b/*/*
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
@@ -23,7 +23,7 @@ if (firstLink) {
             if(doc.querySelectorAll('.error-code').length >=1){
                 firstLink.style.fontSize = '15px';
                 firstLink.style.fontWeight = 'bold';
-                firstLink.style.color = 'red';
+                firstLink.style.color = 'orange';
                 firstLink.style.textDecoration = 'line-through';
                 firstLink.textContent += ' (삭제된 계정)';
                 console.log("삭제된 계정");
@@ -50,7 +50,7 @@ if (firstLink) {
                 if(post<=14 || coment<=14){
                     firstLink.style.fontSize = '15px';
                     firstLink.style.fontWeight = 'bold';
-                    firstLink.style.color = 'red';
+                    firstLink.style.color = 'orange';
                     firstLink.textContent += ' (글:'+post+' 댓글:'+coment+')';
                 }else{
                     //firstLink.textContent += ' (글:'+post+' 댓글:'+coment+')';
