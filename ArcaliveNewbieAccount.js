@@ -3,10 +3,10 @@
 // @namespace    http://kemomimi.com/
 // @version      1.0
 // @description  깡계확인 스크립트 - 확인기준 글 14개 이하 또는 댓글 14개 이하로 수정
-// @description2 원출처 https://greasyfork.org/en/scripts/470279-%EC%95%84%EC%B9%B4%EB%9D%BC%EC%9D%B4%EB%B8%8C-%EA%B9%A1%EA%B3%84%ED%99%95%EC%9D%B8
 // @match        https://arca.live/b/*/*
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
+// 원출처 https://greasyfork.org/en/scripts/470279-%EC%95%84%EC%B9%B4%EB%9D%BC%EC%9D%B4%EB%B8%8C-%EA%B9%A1%EA%B3%84%ED%99%95%EC%9D%B8
 
 const firstLink = document.querySelector('.info-row .user-info a');
 if (firstLink) {
