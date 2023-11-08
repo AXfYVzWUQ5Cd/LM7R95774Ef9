@@ -21,7 +21,7 @@ if (firstLink) {
             const parser = new DOMParser();
             const doc = parser.parseFromString(htmlData, 'text/html');
             if(doc.querySelectorAll('.error-code').length >=1){
-                firstLink.style.fontSize = '20px';
+                firstLink.style.fontSize = '15px';
                 firstLink.style.fontWeight = 'bold';
                 firstLink.style.color = 'red';
                 firstLink.style.textDecoration = 'line-through';
@@ -48,7 +48,7 @@ if (firstLink) {
                     }
                 }
                 if(post<=14 || coment<=14){
-                    firstLink.style.fontSize = '20px';
+                    firstLink.style.fontSize = '15px';
                     firstLink.style.fontWeight = 'bold';
                     firstLink.style.color = 'red';
                     firstLink.textContent += ' (최근 글:'+post+' 댓글:'+coment+')';
