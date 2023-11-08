@@ -51,9 +51,9 @@ if (firstLink) {
                     firstLink.style.fontSize = '15px';
                     firstLink.style.fontWeight = 'bold';
                     firstLink.style.color = 'red';
-                    firstLink.textContent += ' (최근 글:'+post+' 댓글:'+coment+')';
+                    firstLink.textContent += ' (글:'+post+' 댓글:'+coment+')';
                 }else{
-                    //firstLink.textContent += ' (최근 글:'+post+' 댓글:'+coment+')';
+                    //firstLink.textContent += ' (글:'+post+' 댓글:'+coment+')';
                 }
             }
         }
